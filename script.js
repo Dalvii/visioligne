@@ -58,3 +58,28 @@ for (let i = 0; i < planBtn.length; i++) {
         e.target.parentNode.ariaSelected = true;
     })
 }
+
+
+
+
+// const subnav = document.getElementById('subnav')
+// const nav = document.getElementById('nav1')
+// nav.addEventListener("mouseenter", function( event ) {
+
+//     subnav.style.display = 'block'
+
+//     setTimeout(function() {
+//         subnav.style.opacity = '1'
+//     }, 5);
+// }, false);
+
+
+// nav.addEventListener("mouseout", function( event ) {
+
+//     subnav.style.opacity = '0'
+    
+//     setTimeout(function() {
+//         subnav.style.display = 'none'
+
+//     }, 500);
+//   }, false);

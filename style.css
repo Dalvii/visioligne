@@ -100,6 +100,29 @@ nav ul li:last-child a:hover {
     transform: translateY(-2px);
 }
 
+
+
+#subnav {
+    width: 100%;
+    height: 150px;
+    background-color: #2d2d2d;
+    display: none;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    transition: all 500ms ease 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
 section {
     width: 1024px;
     max-width: 90%;
@@ -125,6 +148,11 @@ section:last-of-type{
     opacity: 0;
     transition: all 1s ease 0s;
 }
+
+
+
+
+
 
 
 .showcase_list {
@@ -175,6 +203,9 @@ section:last-of-type{
     transition: color 300ms ease 0s;
     color: var(--text-color);
 }
+
+
+
 
 
 
@@ -237,6 +268,8 @@ p {
 
 
 
+
+
 #showcase {
     max-width: 100%;
     margin: auto;
@@ -259,6 +292,9 @@ p {
 
 
 
+
+
+
 .usedby {
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +307,11 @@ p {
 .usedby li {
     margin: 2rem;
 }
+
+
+
+
+
 
 
 .center {
@@ -313,6 +354,8 @@ p {
 
 
 
+
+
 .features_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -350,6 +393,9 @@ p {
     font-size: 16px;
     color: var(--gray-color);
 }
+
+
+
 
 
 
