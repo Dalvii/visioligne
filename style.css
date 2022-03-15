@@ -273,7 +273,10 @@ p {
 }
 
 
-
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 .tablette {
     width: 100%;
@@ -288,6 +291,23 @@ p {
     right: 7rem;
 }
 
+.startBtn {
+    background: #26a6fc;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease 0s;
+    box-shadow: rgb(12 12 12 / 32%) 0px 0px 49px;
+}
+.startBtn:hover {
+    background: #70c6ff;
+
+}
 
 
 
@@ -335,7 +355,7 @@ p {
 
 footer {
     display: flex;
-    height: 70px;
+    height: 100px;
     background-color: var(--nav-color);
     color: var(--nav-text-color);
     align-items: center;
@@ -358,9 +378,18 @@ footer {
         display: block;
     }
     .tablette {
-        margin: -120px auto 0rem 0;
+        margin: -90px auto 4rem 0
     }
     .mobile {
         display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .usedby li {
+        margin: 1rem;
+    }
+    .features_grid > div {
+        padding: 2rem;
     }
 }
