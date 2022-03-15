@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Lora:ital@0;1&family=Montserrat:wght@400;500;600&family=Poppins:wght@300;400;500&family=Suranna&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Visioligne</div>
+        <ul>
+            <li>
+                <button>Présentation</button>
+                <svg width="6" height="4" fill="none" viewBox="0 0 6 4" class="dropdown-menu-svg"><path fill="#999" d="M.471 0L0 .471 2.828 3.3 5.657.47 5.185 0 2.828 2.357.471 0z"></path></svg>
+
+            </li>
+            <li>
+                <button>Fonctionnalités</button>
+                <svg width="6" height="4" fill="none" viewBox="0 0 6 4" class="dropdown-menu-svg"><path fill="#999" d="M.471 0L0 .471 2.828 3.3 5.657.47 5.185 0 2.828 2.357.471 0z"></path></svg>
+
+            </li>
+            <li>
+                <button>A propos</button>
+                <svg width="6" height="4" fill="none" viewBox="0 0 6 4" class="dropdown-menu-svg"><path fill="#999" d="M.471 0L0 .471 2.828 3.3 5.657.47 5.185 0 2.828 2.357.471 0z"></path></svg>
+            </li>
+            <li>
+                <a>Contacter</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="showcase">
+            <div class="showcase_main">
+                <h1 class="animate">La visioconférence<br>sur votre site web</h1>
+                <h2 class="animate">Integrez vos conférences vidéo directement sur votre site internet</h2>
+                <ul class="showcase_list planMenu">
+                    <li aria-selected="true"><button class="planBtn">Blanc</button></li>
+                    <li aria-selected="false"><button class="planBtn">Noir</button></li>
+                    <li aria-selected="false"><button class="planBtn">Bleu</button></li>
+                </ul>
+                <!-- <p id="planDesc" class="description planMenu">Plus besoin d'installer une application tierce</p> -->
+            </div>
+            <div style="overflow: hidden;">
+                <img src="white.PNG" alt="" id="plan">
+            </div>
+        </section>
+        <section id="used_by">
+            <p class="gray animate">Ils nous font confiance :</p>
+            <ul class="usedby">
+                <li class="animate">
+                    <a href="https://fondation-signature.org/" title="Fondation Signature" target="_blank">
+                        <img width="120"  src="fs.png" alt="Fondation Signautre">
+                    </a>
+                </li>
+                <!-- <li class="animate">
+                    <a href="https://www.institutdefrance.fr/" title="Institut de France" target="_blank">
+                        <img width="120" src="institut_de_france_logo_header.svg" alt="Institut de France">
+                    </a>
+                </li> -->
+                <li class="animate">
+                    <a href="https://estudium.net/" title="Estudium.net" target="_blank">
+                        <img width="120" src="estudium.png" alt="Estudium.net">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h1 class="animate">Lorem, ipsum dolor. <br> Lorem ipsum dolor sit.</h1>
+            <div class="features_grid animate">
+                <div><h3>Test</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt maiores quo eius.</p></div>
+                <div><h3>Test</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt maiores quo eius.</p></div>
+                <div><h3>Test</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt maiores quo eius.</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <div class="mail">Mail</div>
+            <div class="github"></div>
+        </div>
+        <div class="copyright">Visioligne.com © 2022 - Tous droits réservés</div>
+    </footer>
+</body>
+</html>
