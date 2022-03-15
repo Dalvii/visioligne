@@ -15,7 +15,7 @@ const observerPlan = new IntersectionObserver(entries => {
         }
     })
 }, {
-    rootMargin: "00px",
+    rootMargin: "-150px",
     threshold: 0.5
 })
 observerPlan.observe(plan)
@@ -44,15 +44,13 @@ for (let i = 0; i < animate.length; i++) {
 }
 
 
-const images = ['/test.png', 'https://www.expertest.tn/wp-content/uploads/2021/04/Custom-Software-Development.jpg']
-const descriptions = ['fs  fesse fs fe fes', 'kjh kkuhkhu kuhkh']
+const images = ['img/white.png', 'img/dark.png']
 
 let planBtn = document.querySelectorAll('.planBtn')
 for (let i = 0; i < planBtn.length; i++) {
     planBtn[i].addEventListener('click', (e) => {
         console.log(i)
         document.getElementById('plan').src = images[i]
-        // document.getElementById('planDesc').innerText = descriptions[i]
         const btns = e.target.parentNode.parentNode.children
         for (let y = 0; y < btns.length; y++) {
             btns[y].ariaSelected=false; 

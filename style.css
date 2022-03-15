@@ -1,6 +1,6 @@
 @font-face {
     font-family: Everett;
-    src: url("Everett-Medium.otf") format("opentype");
+    src: url("font/Everett-Medium.otf") format("opentype");
 }
 
 *, :after, :before {
@@ -20,8 +20,6 @@
 }
 
 
-    
-
 :root {
     --text-color: #000000;
     --bg-color: #fff;
@@ -31,6 +29,8 @@
     --nav-hover-color: rgb(255, 255, 255);
     --features-color: #eeeeee;
 }
+
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -104,8 +104,17 @@ section {
     width: 1024px;
     max-width: 90%;
     margin: 0px auto;
+    padding: 40px 0px 0rem;
+}
+
+section:first-of-type{
     padding: 4rem 0px 0rem;
 }
+
+section:last-of-type{
+    padding: 0rem 0px 4rem;
+}
+
 
 .planMenu {
     opacity: 0;
@@ -178,7 +187,7 @@ ul {
 
 
 h1 {
-    font-size: 64px;
+    font-size: 50px;
     letter-spacing: -0.025em;
     line-height: 100%;
     font-family: 'Everett';
@@ -187,10 +196,16 @@ h1 {
     text-align: center;
     margin: 0px 0px 1.5rem;
     font-weight: normal;
-    margin-bottom: 40px;
 }
 
+
 h2 {
+    text-align: center;
+    color: var(--gray-color);
+
+}
+
+h3 {
     text-align: center;
     margin-bottom: 3.7rem;
     font-weight: normal;
@@ -232,12 +247,12 @@ p {
     margin: 240px auto -50px;
     display: block;
     max-width: 90%;
-    transition: all 1.2s cubic-bezier(0.85, 0, 0.15, 1) 0s;
+    transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1) 0s, opacity 1s;
     border: 1px solid rgb(36, 36, 36);
-    box-shadow: rgb(0 0 0 / 24%) 0px 9.55893px 19.1179px, rgb(0 0 0 / 12%) 0px 9.55893px 4.77946px;
-    border-radius: 4px;
+    box-shadow: rgb(12 12 12 / 32%) 0px 0px 49px;;
+    border-radius: 15px;
     transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) scale(1.2) translateY(-200px);
-    opacity: 1;
+    /* opacity: 1; */
     z-index: 3;
 }
 
@@ -249,12 +264,28 @@ p {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin: 2rem 0px 3rem;
+    margin: -4rem 0px 3rem;
     justify-content: center;
 }
 
 .usedby li {
     margin: 2rem;
+}
+
+
+
+
+.tablette {
+    width: 100%;
+    position: relative;
+    margin: -170px auto 0rem 0;
+}
+
+.mobile {
+    width: 30%;
+    position: absolute;
+    top: 3rem;
+    right: 7rem;
 }
 
 
@@ -266,7 +297,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px;
-    margin: 4rem 0px;
+    margin: 3rem 0px;
 }
 
 .features_grid > div {
@@ -274,7 +305,7 @@ p {
     -webkit-box-align: center;
     align-items: center;
     flex-direction: column;
-    padding: 4rem;
+    padding: 3rem;
     margin-top: 20px;
     border-radius: 4px;
     text-align: center;
@@ -325,5 +356,11 @@ footer {
 @media screen and (max-width: 768px) {
     .features_grid {
         display: block;
+    }
+    .tablette {
+        margin: -120px auto 0rem 0;
+    }
+    .mobile {
+        display: none;
     }
 }
