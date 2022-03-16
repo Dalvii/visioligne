@@ -523,4 +523,12 @@ footer {
     .features_grid > div {
         padding: 2rem;
     }
+    .price-list {
+        display: block;
+    }
+    .price-list > div {
+        margin: 25px auto;
+        width: 88%;
+        height: 540px;
+    }
 }

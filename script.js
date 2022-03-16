@@ -5,7 +5,7 @@ const observerPlan = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const intersecting = entry.isIntersecting
         console.log(intersecting)
-        if (intersecting == true) {
+        if (intersecting == true || window.screen.width < 500) {
             observerPlan.unobserve(entry.target)
             plan.style.transform = 'translate(0px, -150px)';
             const planMenu = document.getElementsByClassName('planMenu')
@@ -30,7 +30,7 @@ try {
 const observerScroll = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const intersecting = entry.isIntersecting
-        console.log(entry.target)
+        // console.log(entry.target)
         if (intersecting == true) {
             entry.target.style.opacity = 1;
             observerScroll.unobserve(entry.target)
@@ -44,7 +44,7 @@ const observerScroll = new IntersectionObserver(entries => {
 const animate = document.getElementsByClassName('animate')
 for (let i = 0; i < animate.length; i++) {
     observerScroll.observe(animate[i])
-    console.log(animate[i])
+    // console.log(animate[i])
 }
 
 
@@ -53,7 +53,7 @@ const images = ['img/white.png', 'img/dark.png']
 let planBtn = document.querySelectorAll('.planBtn')
 for (let i = 0; i < planBtn.length; i++) {
     planBtn[i].addEventListener('click', (e) => {
-        console.log(i)
+        // console.log(i)
         document.getElementById('plan').src = images[i]
         const btns = e.target.parentNode.parentNode.children
         for (let y = 0; y < btns.length; y++) {
