@@ -61,10 +61,13 @@ nav {
 nav ul {
     margin: 0;
     display: flex;
+    height: 100%;
 }
 nav li {
-    margin-right: 15px;
-    /* position: relative; */
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav button {
     background: transparent;
@@ -80,6 +83,10 @@ nav button:hover {
 }
 nav button:hover ~ svg > path {
     fill: var(--nav-hover-color);
+}
+
+nav ul li:first-child {
+    padding-left: 15px;
 }
 
 nav ul li:last-child a {
@@ -99,31 +106,44 @@ nav ul li:last-child a:hover {
 
 }
 
-.dropdown-menu-svg {
-    transform: translateY(-2px);
+
+.navHover:hover > .subnav {
+    display: flex;
+    opacity: 1;
 }
-
-
 
 .subnav {
     width: 100%;
-    height: 150px;
+    height: 65px;
     background-color: #2d2d2d;
     top: 50px;
     left: 0;
     color: white;
     position: absolute;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     padding: 10px;
     box-shadow: var(--bx-shadow2);
     /* transform: translateY(-250px); */
-    /* display: none; */
-    /* opacity: 0; */
+    display: none;
+    opacity: 0;
     transition: all 500ms ease 0s;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
 
+.subnav > a {
+    text-decoration: none;
+    color: var(--features-color);
+    transition: all 500ms ease 0s;
+}
+.subnav > a:hover {
+    color: var(--gray-color)
+}
 
 
 
@@ -403,6 +423,64 @@ p {
     font-size: 16px;
     color: var(--gray-color);
 }
+
+
+
+
+.price-list {
+    display: flex;
+    justify-content: center;
+}
+.price-list > div {
+    margin: 0 20px;
+    width: 40%;
+    height: 600px;
+    border-top: 10px solid rgb(1, 221, 192);
+    background: rgb(205 205 205);;
+    border-radius: 0.25rem;
+    /* text-align: center; */
+    padding: 2rem 2.5rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    box-shadow: var(--bx-shadow);
+}
+
+.price-list h2 {
+    margin: 8px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #929292;
+    border-radius: 1px;
+    margin: 25px 0;
+
+}
+
+.price-pros-list {
+    padding-inline-start: inherit;
+}
+.price-pros-list li {
+    list-style: inherit;
+    padding: 8px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

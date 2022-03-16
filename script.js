@@ -18,7 +18,11 @@ const observerPlan = new IntersectionObserver(entries => {
     rootMargin: "-150px",
     threshold: 0.5
 })
-observerPlan.observe(plan)
+try {
+    observerPlan.observe(plan)
+} catch (e) {
+    
+}
 
 
 
