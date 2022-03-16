@@ -435,7 +435,7 @@ p {
     margin: 0 20px;
     width: 40%;
     height: 600px;
-    border-top: 10px solid rgb(1, 221, 192);
+    border-top: 10px solid #26a6fc;
     background: rgb(205 205 205);;
     border-radius: 0.25rem;
     /* text-align: center; */
