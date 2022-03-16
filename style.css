@@ -440,9 +440,9 @@ p {
     border-radius: 0.25rem;
     /* text-align: center; */
     padding: 2rem 2.5rem;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: var(--bx-shadow);
 }
 
@@ -464,15 +464,12 @@ hr {
 }
 
 .price-pros-list {
-    padding-inline-start: inherit;
+    padding-inline-start: 40px;
 }
 .price-pros-list li {
     list-style: inherit;
     padding: 8px 0;
 }
-
-
-
 
 
 
