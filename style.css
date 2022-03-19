@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --text-color: #fff;
     --bg-color: #000;
@@ -479,9 +483,25 @@ hr {
     text-align: justify;
     width: 70%;
     margin: 0 auto;
-    text-indent: 2rem;
+    word-wrap: break-word;
+    /* text-indent: 2rem; */
+    margin: 4px auto;
+    display: block;
 }
+img.paragraph {
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow);
 
+}
+iframe.code {
+    width: 80%;
+    margin: 0 auto;
+    height: 453px;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
 
 
 
@@ -554,5 +574,10 @@ footer {
         margin: 25px auto;
         width: 88%;
         height: 560px;
+    }
+    .paragraph {
+        width: 100%;
+        text-align: start;
+        word-wrap: normal;
     }
 }
