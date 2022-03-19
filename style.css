@@ -313,7 +313,7 @@ p {
     transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1) 0s, opacity 1s;
     border: 1px solid rgb(36, 36, 36);
     box-shadow: rgb(12 12 12 / 32%) 0px 0px 49px;;
-    border-radius: 15px;
+    border-radius: 8px;
     transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) scale(1.2) translateY(-200px);
     /* opacity: 1; */
     z-index: 3;
@@ -475,7 +475,9 @@ hr {
 
 
 
-
+.paragraph {
+    
+}
 
 
 
@@ -505,16 +507,35 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 38px;
+    }
     .features_grid {
         display: block;
     }
     .tablette {
-        margin: -90px auto 4rem 0
+        margin: -60px auto 1.5rem 0;
+        transform: scale(1.2);
     }
     .mobile {
         display: none;
     }
-    nav ul {
+    nav {
+        flex-direction: column;
+        height: 80px;
+    }
+    .logo {
+        padding: 8px;
+    }
+    .subnav {
+        top: 80px;
+        display: none !important;
+    }
+    .navHover svg {
         display: none;
     }
     .usedby li {
@@ -529,6 +550,6 @@ footer {
     .price-list > div {
         margin: 25px auto;
         width: 88%;
-        height: 540px;
+        height: 560px;
     }
 }
