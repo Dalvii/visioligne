@@ -476,7 +476,10 @@ hr {
 
 
 .paragraph {
-    
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+    text-indent: 2rem;
 }
 
 
