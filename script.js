@@ -87,3 +87,24 @@ for (let i = 0; i < planBtn.length; i++) {
 
 //     }, 500);
 //   }, false);
+
+
+    // let mouseX = 0;
+    // let mouseY = 0;
+    // let xp = 0;
+    // let yp = 0;
+  
+    // document.onmousemove = function(e) {
+    //     document.getElementById('custom__cursor__inner').style.transform =
+    //         'translate(' + (e.clientX - 3.25) + 'px, ' + (e.clientY - 3.25) + 'px)';
+   
+        
+    //     mouseX = e.clientX - 10;
+    //     mouseY = e.clientY - 60;
+    // }
+  
+    // setInterval(function(){
+    //     xp += ((mouseX - xp)/6);
+    //     yp += ((mouseY - yp)/6);
+    //     document.getElementById('custom__cursor__outer').style.transform = 'translateX('+ (xp - 15) +'px) translateY('+ (yp - 15) +'px)';
+    // }, 10);

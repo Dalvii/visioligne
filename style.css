@@ -521,6 +521,42 @@ footer {
     flex-direction: column;
 }
 
+
+
+/* * {
+    cursor: none !important;
+} */
+
+
+/* #custom__cursor__inner{
+    height: 7.5px;
+    width: 7.5px;
+    position: fixed;
+    transform: translate(0px, 0px);
+    background-color: #F7D883;
+    border-radius: 50%;
+    transition: height .3s cubic-bezier(0.46,0.03,0.52,0.96), width .3s cubic-bezier(0.46,0.03,0.52,0.96);
+    z-index: 5000;
+    pointer-events: none;
+} */
+
+#custom__cursor__outer{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    border-radius: 50%;
+    background-color: white;
+    backface-visibility: hidden;
+    /* transition: transform 0.1s ease-out; */
+    mix-blend-mode: difference;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+
+
 @keyframes text_appear {
     0% {
         opacity: 0;
