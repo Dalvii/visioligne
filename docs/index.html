@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Lora:ital@0;1&family=Montserrat:wght@400;500;600&family=Poppins:wght@300;400;500&family=Suranna&display=swap"
+        rel="stylesheet">
+
+    <title>A propos - Visioligne.com</title>
+    <meta name="description"
+        content="La visioconférence directement sur votre site internet, plus besoin de télécharger une application tierce. Passez des appels vidéos par webcam ou partagez votre écran...">
+    <meta name="google-site-verification" content="9qvCn7zMWznkYflFqmTLu_0wTXRtYS_ZTrMXDdvETqo" />
+    <meta name="author" content="Theo Vidal">
+    <meta property="og:title" content="A propos - Visioligne.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visioligne.com/">
+    <meta property="og:description"
+        content="La visioconférence directement sur votre site internet, plus besoin de télécharger une application tierce. Passez des appels vidéos par webcam ou partagez votre écran...">
+    <meta name="theme-color" content="#202020">
+
+    <script defer src="/script.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="/">Visioligne</a>
+        <ul>
+            <li class="navHover">
+                <button id="nav1" onclick="window.location.href = '/presentation'">Présentation</button>
+                <svg width="6" height="4" fill="none" viewBox="0 0 6 4" class="dropdown-menu-svg">
+                    <path fill="#999" d="M.471 0L0 .471 2.828 3.3 5.657.47 5.185 0 2.828 2.357.471 0z"></path>
+                </svg>
+                <div class="subnav">
+                    <a href="/presentation#fonctionnalites">Fonctionnalités</a>
+                    <a href="/presentation#startup">Mise en route</a>
+                    <a href="/presentation#demo">Démonstration</a>
+                </div>
+            </li>
+            <li class="navHover">
+                <button id="nav2">A Propos</button>
+                <svg width="6" height="4" fill="none" viewBox="0 0 6 4" class="dropdown-menu-svg">
+                    <path fill="#999" d="M.471 0L0 .471 2.828 3.3 5.657.47 5.185 0 2.828 2.357.471 0z"></path>
+                </svg>
+                <div class="subnav">
+                    <a href="/a-propos">A Propos</a>
+                    <a href="/docs">Documentation</a>
+                    <a href="https://status.visioligne.com">Statut</a>
+                    <a href="mailto:contact@visioligne.com">Contacter</a>
+                </div>
+            </li>
+            <li>
+                <button onclick="window.location.href = '/tarifs'">Tarifs</button>
+            </li>
+            <li>
+                <!-- <a href="mailto:contact@visioligne.com">Contacter</a> -->
+                <a href="https://dashboard.visioligne.com">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section style="margin-bottom: 56vh;">
+            <div class="animate">
+                <h1 class="animate">Documentation</h1>
+
+                <iframe src="https://v1.embednotion.com/embed/90d4152c8caa4876b910e8145afe1c81" scrolling="no"></iframe>
+                <style>
+                    iframe {
+                        width: 100%;
+                        height: 760vh;
+                        border: 2px solid #ccc;
+                        border-radius: 10px;
+                        padding: none;
+                    }
+                    @media screen and (max-width: 768px) {
+                        iframe {
+                            width: 100%;
+                            border: 1px solid #ccc;
+                            border-radius: 7px;
+                            padding: none;
+                        }
+                    }
+                </style>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a class="mail">Mail</a>
+            <a class="github"> - Github</a>
+        </div>
+        <div class="copyright">Visioligne.com © 2022 - Tous droits réservés</div>
+    </footer>
+</body>
+
+</html>
