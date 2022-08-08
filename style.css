@@ -513,7 +513,7 @@ iframe.code {
 
 footer {
     display: flex;
-    height: 100px;
+    height: 50px;
     background-color: var(--nav-color);
     color: var(--nav-text-color);
     align-items: center;
